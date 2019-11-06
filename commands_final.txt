@@ -1,0 +1,161 @@
+ 240  mkdir demo
+  241  cd demo
+  242  git init
+  243  vi home.html
+  244  git add home.html
+  245  git commit -m "Added home page"
+  246  vi contact.html
+  247  git status
+  248  git add .
+  249  git status
+  250  git reset HEAD contact.html
+  251  git status
+  252  vi contact.html
+  253  git add .
+  254  git commit -m "Added contact page"
+  255  vi catalogue.html
+  256  git add .
+  257  vi catalogue.html
+  258  git status
+  259  git add .
+  260  git status
+  261  git commit -m "Added catalogue page"
+  262  vi trendyitems.html
+  263  git add .
+  264  git commit -m "Trendyitems page"
+  265  git rm trendyitems.html
+  266  git status
+  267  git add .
+  268  git commit -m "Deleted trendyitems page"
+  269  vi home.html
+  270  git add .
+  271  vi home.html
+  272  git status
+  273  git checkout -- home.html
+  274  git status
+  275  vi home.html
+  276  git rm --cached home.html
+  277  git status
+  278  git add .
+  279  git commit -m "Deleted Home page"
+  280  vi contact.html
+  281  git add .
+  282  git status
+  283  git rm contact.html
+  284  git rm --cached contact.html
+  285  git status
+  286  git add .
+  287  git commit -m "Deleted contact page"
+  288  git status
+  289  ls
+  290  vi 0111.log
+  291  vi 0211.log
+  292  vi 0311.log
+  293  vi .gitignore
+  294  git status
+  295  git add .
+  296  git commit -m "Added .gitignore file"
+  297  vi .gitignore
+  298  git status
+  299  git add .
+  300  git status
+  301  git commit -m "Added 0311.log"
+  302  vi contact.html
+  303  git status
+  304  git add .
+  305  git status
+  306  git rm --cached contact.html
+  307  git status
+  308  git commit -m "Deleted contact.html"
+  309  git status
+  310  git add .
+  311  git commit -m "Added contact.html"
+  312  ls
+  313  vi home.html
+  314  git status
+  315  git add .
+  316  git status
+  317  git diff
+  318  git diff --staged
+  319  git commit -m "Added links of other pages in home.html"
+  320  vi home.html
+  321  git diff
+  322  git status
+  323  git add.
+  324  git add .
+  325  git commit -m "Added copyright information"
+  326  git log
+  327  git log --oneline
+  328  git tag -a v1.0 758f108 -m "Initial release"
+  329  git tag
+  330  git show v1.0
+  331  vi vendor.html
+  332  git add vendor.html
+  333  git commit -m "Added vedor page"
+  334  git log --oneline
+  335  git commit --amend -m "Added vendor page"
+  336  git log --oneline
+  337  vi home.html
+  338  git commit -am "Modified home page to add link to vendor page"
+  339  git log --oneline
+  340  git tag --a v1.1
+  341  git tag
+  342  git log --oneline
+  343  git show v1.1
+  344  git log --oneline
+  345  git reset HEAD~2
+  346  git status
+  347  vi home.html
+  348  git status
+  349  git log --oneline
+  350  vi home.html
+  351  ls
+  352  git add vendor.html
+  353  git commit -m "Added vendor page"
+  354  git log --oneline
+  355  git reset HEAD~1
+  356  git status
+  357  git add .
+  358  git commit -m "new vendor page"
+  359  git log --oneline
+  360  git reset --soft HEAD~1
+  361  git status
+  362  vi home.html
+  363  git status
+  364  git add home.html
+  365  git status
+  366  git commit -m "Added link to vendor page"
+  367  git log --oneline
+  368  git reset --hard HEAD~1
+  369  git log --oneline
+  370  ls
+  371  vi home.html
+  373  git log --oneline
+  374  git revert f5845df
+  375  git log --oneline
+  376  ls
+  377  ls -al
+  378  vi .gitignore
+  380  git branch -a
+  381  git remote add origin https://github.com/edureka4/edureka_mod2.git
+  382  git branch -a
+  383  git remote
+  385  cd .git
+  389  cat config
+  390  git push -u origin master
+  391  cd ..
+  392  vi discount.html
+  393  git add .
+  394  git commit -m "Added discount page"
+  395  git push origin
+  396  git pull origin
+  397  ls
+  398  git push origin
+  399  git fetch origin
+  409  git merge
+  412  cd ..
+  413  git clone https://github.com/edureka4/edureka_mod2.git
+  414  ls
+  417  cd demo	
+  420  git push origin --tags
+
