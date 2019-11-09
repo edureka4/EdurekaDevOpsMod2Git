@@ -158,4 +158,15 @@
   414  ls
   417  cd demo	
   420  git push origin --tags
+  1024  git branch -a
+ 1025  git fetch
+ 1027  git checkout remotes/origin/master
+ 1028  git checkout -b remote1
+ 1029  ls
+ 1030  vi readme.md
+ 1031  git checkout master
+ 1032  ls
+ 1033  vi readme.md
+ 1035  git merge
+ 1036  git branch -d remote1
 
